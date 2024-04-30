@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate file</title>
+    <script defer src="js/logic.js"></script>
+</head>
+<body>
+<form action="/gen" id="gen-form" method="post">
+    <label>Path
+        <input id="path" name="path" type="text">
+    </label>
+    <label>Depth
+        <input id="depth" name="depth" type="number" value="2">
+    </label>
+    <label>Extension
+        <input id="extension" name="extension" type="text" value="txt">
+    </label>
+    <button type="submit">Generate</button>
+</form>
+</body>
+</html>
