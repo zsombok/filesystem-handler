@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: filesystem-handler
+  datasource:
+    url: jdbc:postgresql://localhost:5436/postgres
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
