@@ -11,6 +11,10 @@ java {
     sourceCompatibility = '17'
 }
 
+javadoc {
+    destinationDir = file("${rootDir}/src/main/resources/static/doc")
+}
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
