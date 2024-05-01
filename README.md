@@ -11,7 +11,7 @@
 - [X] docker image
 - [X] swagger-ui
 - [ ] unit tests
-- [X] /doc
+- [X] /doc/index.html
 - [ ] javadoc
 - [ ] Makefile
 - [X] podman

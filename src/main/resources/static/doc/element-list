@@ -1,0 +1,7 @@
+org.zsombok.filesystemhandler
+org.zsombok.filesystemhandler.controllers
+org.zsombok.filesystemhandler.models
+org.zsombok.filesystemhandler.models.dtos
+org.zsombok.filesystemhandler.repositories
+org.zsombok.filesystemhandler.services
+org.zsombok.filesystemhandler.utils.converters
