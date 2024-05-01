@@ -60,16 +60,11 @@ public class FileService {
 
   public void generateFile(GenerateRequest request) {
     log.info("generateFile called with: {}", request);
-    File folder = new File(request.getPath());
-    log.info("Folder: {}", folder);
-    if (!folder.exists() || !folder.isDirectory()) {
-      throw new IllegalArgumentException("Folder does not exist or is not a directory");
-    }
-    generateFile(folder, request.getDepth(), request.getExtension());
+    generateFile(request.getPath(), request.getDepth(), request.getExtension());
   }
 
-  private void generateFile(File folder, int depth, String extension) {
-    StringBuilder sb = new StringBuilder(folder.toString());
+  private void generateFile(String folder, int depth, String extension) {
+    StringBuilder sb = new StringBuilder(folder);
     for (int i = 0; i <= depth; i++) {
       sb.append(File.separator).append(UUID.randomUUID());
     }
