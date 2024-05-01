@@ -1,10 +1,7 @@
 package org.zsombok.filesystemhandler.controllers;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.headers.Header;
-import io.swagger.v3.oas.annotations.info.Info;
 import java.util.List;
 import java.util.Set;
 import lombok.RequiredArgsConstructor;
@@ -19,9 +16,7 @@ import org.zsombok.filesystemhandler.services.FileService;
 
 @Slf4j
 @RestController
-@RequestMapping(
-    produces = MediaType.APPLICATION_JSON_VALUE,
-    consumes = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 @RequiredArgsConstructor
 public class FileController {
 
