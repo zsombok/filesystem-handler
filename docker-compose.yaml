@@ -11,9 +11,7 @@ services:
       - postgres-data:/var/lib/postgresql/data
 
   app-instance1:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: zsombok/filesystemhandler:latest
     environment:
       DB_USER: postgres
       DB_PASSWORD: mypassword
@@ -26,9 +24,7 @@ services:
       - postgres
 
   app-instance2:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: zsombok/filesystemhandler:latest
     environment:
       DB_USER: postgres
       DB_PASSWORD: mypassword
